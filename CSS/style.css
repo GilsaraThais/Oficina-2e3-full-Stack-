@@ -1,0 +1,141 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-size: 1rem; /* Define o tamanho base como 1rem (16px padrão do navegador) */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Tamanho responsivo do título principal */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Menu sempre em linha */
+    justify-content: center; /* Centraliza os itens */
+    gap: 15px; /* Espaçamento entre os links */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem; /* Tamanho relativo para os links */
+    padding: 5px 10px; /* Espaçamento interno para melhorar o clique */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #94d2bd; /* Cor ao passar o mouse */
+}
+
+/* Seções */
+section {
+    padding: 2em;
+}
+
+h2 {
+    color: #333;
+    font-size: 2rem; /* Tamanho relativo do subtítulo */
+}
+
+p {
+    font-size: 1.125rem; /* Ajuste para parágrafos */
+    line-height: 1.6; /* Melhora a leitura */
+}
+
+/* Imagens */
+img {
+    width: 100%; /* Ajusta para caber no contêiner */
+    height: auto;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 1rem; /* Tamanho da fonte ajustado para tabelas */
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Responsividade */
+
+/* Para dispositivos com largura menor que 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem; /* Reduz a fonte base em dispositivos menores */
+    }
+
+    header h1 {
+        font-size: 2rem; /* Título menor */
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Quebra os links em uma nova linha se necessário */
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Ajusta o tamanho dos links */
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    table {
+        font-size: 0.9rem; /* Tamanho da tabela ajustado */
+    }
+}
+
+/* Para dispositivos com largura menor que 480px */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.8rem; /* Reduz a fonte base ainda mais */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Reduz ainda mais o tamanho do título */
+    }
+
+    nav ul {
+        gap: 10px; /* Reduz o espaço entre os links */
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Fonte menor para caber melhor */
+        padding: 5px; /* Reduz o padding interno */
+    }
+
+    table {
+        font-size: 0.8rem; /* Fonte menor para caber melhor */
+    }
+}
+
+article {
+  display: block;
+  margin: 0;
+  padding: 20px;
+  border: 0;
+  font-size: 100%;
+}
